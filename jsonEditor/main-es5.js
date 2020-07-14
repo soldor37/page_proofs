@@ -607,7 +607,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function deleteRow(item) {
           var index = this.tmpJson.indexOf(item);
 
-          if (index !== -1) {
+          if (index !== -1 && this.tmpJson.length - 1) {
             this.tmpJson.splice(index, 1);
           }
         }

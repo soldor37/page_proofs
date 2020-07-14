@@ -307,7 +307,7 @@ class JsonEditComponent {
     }
     deleteRow(item) {
         const index = this.tmpJson.indexOf(item);
-        if (index !== -1) {
+        if (index !== -1 && this.tmpJson.length - 1) {
             this.tmpJson.splice(index, 1);
         }
     }
